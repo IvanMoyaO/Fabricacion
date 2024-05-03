@@ -29,7 +29,7 @@ Ver figura \ref{fig:primer}.
 \begin{tikzpicture}[lablum/.style 2 args={label=below:#1 #2,name=img-#1},
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
- { \node[lablum={a}{}]{\includegraphics[width=5.5cm]{Figures/Montaje/1.jpg}};
+ { \node[lablum={a}{}]{\includegraphics[width=8cm]{Figures/Montaje/1.jpg}};
  & \node[lablum={b}{}]{\includegraphics[width=2cm]{Figures/Montaje/2.jpg}};\\
  & \node[lablum=c]{\includegraphics[width=2cm]{Figures/Montaje/3.jpg}};\\
  };
@@ -56,7 +56,7 @@ Ver figura \ref{fig:seg}.
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
  { \node[lablum={a}{}]{\includegraphics[width=2cm]{Figures/Montaje/1.jpg}};
- & \node[lablum={b}{}]{\includegraphics[width=5.5cm]{Figures/Montaje/2.jpg}};\\
+ & \node[lablum={b}{}]{\includegraphics[width=8cm]{Figures/Montaje/2.jpg}};\\
  & \node[lablum=c]{\includegraphics[width=2cm]{Figures/Montaje/3.jpg}};\\ 
  };
  \draw[marr] (img-a) -- (img-b);
@@ -83,7 +83,7 @@ Ver figura \ref{fig:ter}
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
  {  & \node[lablum={b}{}]{\includegraphics[width=2cm]{Figures/Montaje/2.jpg}};\\
- \node[lablum=d]{\includegraphics[width=2cm]{Figures/Montaje/4.jpg}};  & \node[lablum=c]{\includegraphics[width=5.5cm]{Figures/Montaje/3.jpg}};\\
+ \node[lablum=d]{\includegraphics[width=2cm]{Figures/Montaje/4.jpg}};  & \node[lablum=c]{\includegraphics[width=8cm]{Figures/Montaje/3.jpg}};\\
  };
  \draw[marr] ([xshift=1mm]img-b.south east) coordinate (aux) 
  -- (img-c.north-|aux);
@@ -93,7 +93,7 @@ marr/.style={line width=1mm,-latex}]
 \end{figure}
 %===============================================================================================================
 
-
+\pagebreak
 \subsection{Cuarto Paso: Introducción de la Costilla Trasera}
 Colocamos la costilla trasera (la única sin perforar) sobre el primer sombrerete (la que está en el extremo del tubo), y trazamos, sobre la parte interior de ella, la posición del sombrerete, para realizar, posteriormente, la unión de sendas piezas mediante un revestimiento con caña maciza y cabeza universal.
 
@@ -109,7 +109,7 @@ Ver figura \ref{fig:cua}.
 \begin{tikzpicture}[lablum/.style 2 args={label=below:#1 #2,name=img-#1},
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
- { \node[lablum=d]{\includegraphics[width=5.5cm]{Figures/Montaje/4.jpg}};  & \node[lablum=c]{\includegraphics[width=2cm]{Figures/Montaje/3.jpg}};\\
+ { \node[lablum=d]{\includegraphics[width=8cm]{Figures/Montaje/4.jpg}};  & \node[lablum=c]{\includegraphics[width=2cm]{Figures/Montaje/3.jpg}};\\
  \node[lablum=e]{\includegraphics[width=2cm]{Figures/Montaje/5.jpg}};
  & \\
  };
@@ -125,6 +125,7 @@ marr/.style={line width=1mm,-latex}]
 \end{nota}
 %===============================================================================================================
 
+\pagebreak
 
 \subsection{Quinto Paso: Introducción de la Costilla Intermedia}
 Análogo al paso anterior.
@@ -139,7 +140,7 @@ Ver figura \ref{fig:qui}.
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
  { \node[lablum=d]{\includegraphics[width=2cm]{Figures/Montaje/4.jpg}}; \\
- \node[lablum=e]{\includegraphics[width=5.5cm]{Figures/Montaje/5.jpg}}; & \node[lablum=f]{\includegraphics[width=2cm]{Figures/Montaje/6.jpg}}; \\
+ \node[lablum=e]{\includegraphics[width=8cm]{Figures/Montaje/5.jpg}}; & \node[lablum=f]{\includegraphics[width=2cm]{Figures/Montaje/6.jpg}}; \\
  };
   \draw[marr] ([xshift=-1mm]img-d.south west) coordinate (aux) 
  -- (img-e.north-|aux);
@@ -149,7 +150,6 @@ marr/.style={line width=1mm,-latex}]
 \end{figure}
 %===============================================================================================================
 
-\pagebreak
 
 \subsection{Sexto Paso: Introducción del Sombrerete Delantero}
 Análogo a los pasos Segundo y Tercero.
@@ -164,7 +164,7 @@ Ver figura \ref{fig:sex}.
 \begin{tikzpicture}[lablum/.style 2 args={label=below:#1 #2,name=img-#1},
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
- {  \node[lablum=e]{\includegraphics[width=2cm]{Figures/Montaje/5.jpg}}; & \node[lablum=f]{\includegraphics[width=5.5cm]{Figures/Montaje/6.jpg}}; \\
+ {  \node[lablum=e]{\includegraphics[width=2cm]{Figures/Montaje/5.jpg}}; & \node[lablum=f]{\includegraphics[width=8cm]{Figures/Montaje/6.jpg}}; \\
   & \node[lablum=g]{\includegraphics[width=2cm]{Figures/Montaje/7.jpg}};\\ 
  };
  \draw[marr] (img-e) -- (img-f);
@@ -191,7 +191,7 @@ Ver figura \ref{fig:sept}.
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
  {   & \node[lablum=f]{\includegraphics[width=2cm]{Figures/Montaje/6.jpg}}; \\
-  \node[lablum=h]{\includegraphics[width=2cm]{Figures/Montaje/8.jpg}}; & \node[lablum=g]{\includegraphics[width=5.5cm]{Figures/Montaje/7.jpg}}; \\
+  \node[lablum=h]{\includegraphics[width=2cm]{Figures/Montaje/8.jpg}}; & \node[lablum=g]{\includegraphics[width=8cm]{Figures/Montaje/7.jpg}}; \\
  };
 \draw[marr] ([xshift=-1mm]img-f.south east) coordinate (aux) 
  -- (img-g.north-|aux);
@@ -220,7 +220,7 @@ Ver figuras \ref{fig:oct} y \ref{fig:nov}.
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
  {   
-  \node[lablum=h]{\includegraphics[width=5.5cm]{Figures/Montaje/8.jpg}}; & \node[lablum=g]{\includegraphics[width=2cm]{Figures/Montaje/7.jpg}};\\  \node[lablum=i]{\includegraphics[width=2cm]{Figures/Montaje/9.jpg}}; \\
+  \node[lablum=h]{\includegraphics[width=8cm]{Figures/Montaje/8.jpg}}; & \node[lablum=g]{\includegraphics[width=2cm]{Figures/Montaje/7.jpg}};\\  \node[lablum=i]{\includegraphics[width=2cm]{Figures/Montaje/9.jpg}}; \\
  };
  \draw[marr] (img-g) -- (img-h);
   \draw[marr] ([xshift=1mm]img-h.south west) coordinate (aux) 
@@ -239,7 +239,7 @@ marr/.style={line width=1mm,-latex}]
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
  {   
-  \node[lablum=h]{\includegraphics[width=2cm]{Figures/Montaje/8.jpg}}; & \\  \node[lablum=i]{\includegraphics[width=5.5cm]{Figures/Montaje/9.jpg}}; & \node[lablum=j]{\includegraphics[width=2cm]{Figures/Montaje/10.jpg}}; \\
+  \node[lablum=h]{\includegraphics[width=2cm]{Figures/Montaje/8.jpg}}; & \\  \node[lablum=i]{\includegraphics[width=8cm]{Figures/Montaje/9.jpg}}; & \node[lablum=j]{\includegraphics[width=2cm]{Figures/Montaje/10.jpg}}; \\
  };
 \draw[marr] ([xshift=1mm]img-h.south west) coordinate (aux) 
  -- (img-i.north-|aux);
@@ -266,7 +266,7 @@ Ver figura \ref{fig:dec}.
 \begin{tikzpicture}[lablum/.style 2 args={label=below:#1 #2,name=img-#1},
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
- { \node[lablum=i]{\includegraphics[width=2cm]{Figures/Montaje/9.jpg}}; & \node[lablum=j]{\includegraphics[width=5.5cm]{Figures/Montaje/10.jpg}}; \\ 
+ { \node[lablum=i]{\includegraphics[width=2cm]{Figures/Montaje/9.jpg}}; & \node[lablum=j]{\includegraphics[width=8cm]{Figures/Montaje/10.jpg}}; \\ 
  & \node[lablum=k]{\includegraphics[width=2cm]{Figures/Montaje/11.jpg}}; \\
  };
  \draw[marr] (img-i) -- (img-j);
@@ -277,7 +277,7 @@ marr/.style={line width=1mm,-latex}]
 \end{figure}
 %===============================================================================================================
 
-
+\pagebreak
 \subsection{Undécimo Paso: Revestimiento del Borde de Salida}
 Colocamos el primer revestimiento, que ha sido moldeado para que adquiera la forma del borde de salida, y que, además, cuenta con los extremos doblados para que se introduzca a las ranuras de la costilla.
 
@@ -296,7 +296,7 @@ Ver figura \ref{fig:und}.
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
  { & \node[lablum=j]{\includegraphics[width=2cm]{Figures/Montaje/10.jpg}}; \\ 
-\node[lablum=l]{\includegraphics[width=2cm]{Figures/Montaje/12.jpg}}; & \node[lablum=k]{\includegraphics[width=5.5cm]{Figures/Montaje/11.jpg}}; \\
+\node[lablum=l]{\includegraphics[width=2cm]{Figures/Montaje/12.jpg}}; & \node[lablum=k]{\includegraphics[width=8cm]{Figures/Montaje/11.jpg}}; \\
  };
 \draw[marr] ([xshift=-1mm]img-j.south east) coordinate (aux) 
  -- (img-k.north-|aux);
@@ -306,6 +306,7 @@ marr/.style={line width=1mm,-latex}]
 \end{figure}
 %===============================================================================================================
 
+\pagebreak
 \subsection{Duodécimo Paso: Revestimiento del Borde de Ataque}
 Análogo al paso anterior. Colocamos el revestimiento, que ha sido moldeado con forma del borde de ataque, siguiendo el procedimiento descrito en el paso anterior.
 
@@ -319,7 +320,7 @@ Ver figura \ref{fig:duo}.
 \begin{tikzpicture}[lablum/.style 2 args={label=below:#1 #2,name=img-#1},
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
- { \node[lablum=l]{\includegraphics[width=5.5cm]{Figures/Montaje/12.jpg}}; & \node[lablum=k]{\includegraphics[width=2cm]{Figures/Montaje/11.jpg}}; \\
+ { \node[lablum=l]{\includegraphics[width=8cm]{Figures/Montaje/12.jpg}}; & \node[lablum=k]{\includegraphics[width=2cm]{Figures/Montaje/11.jpg}}; \\
  \node[lablum=m]{\includegraphics[width=2cm]{Figures/Montaje/13.jpg}}; &  \\
  };
 \draw[marr] (img-k) -- (img-l);
@@ -330,7 +331,7 @@ marr/.style={line width=1mm,-latex}]
 \end{figure}
 %===============================================================================================================
 
-
+\pagebreak
 \subsection{Decimotercer Paso: Revestimiento del Extradós}
 Se efectúa un remachado de caña maciza con avellanado posterior. Como el revestimiento del intradós aún no ha sido colocado, tenemos acceso en sendas partes, por lo que podemos realizar un remachado no ciego.
 
@@ -345,7 +346,7 @@ Ver figura \ref{fig:dete}.
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
  { \node[lablum=l]{\includegraphics[width=2cm]{Figures/Montaje/12.jpg}}; &  \\
- \node[lablum=m]{\includegraphics[width=5.5cm]{Figures/Montaje/13.jpg}}; & \node[lablum=n]{\includegraphics[width=2cm]{Figures/Montaje/14.jpg}}; \\
+ \node[lablum=m]{\includegraphics[width=8cm]{Figures/Montaje/13.jpg}}; & \node[lablum=n]{\includegraphics[width=2cm]{Figures/Montaje/14.jpg}}; \\
  };
 \draw[marr] ([xshift=1mm]img-l.south west) coordinate (aux) 
  -- (img-m.north-|aux);
@@ -369,7 +370,7 @@ Ver figura \ref{fig:decic}.
 marr/.style={line width=1mm,-latex}]
  \matrix[column sep=1cm,row sep=5mm] (mat)
  { \node[lablum=l]{\includegraphics[width=2cm]{Figures/Montaje/12.jpg}}; &  \\
- \node[lablum=m]{\includegraphics[width=2cm]{Figures/Montaje/13.jpg}}; & \node[lablum=n]{\includegraphics[width=5.5cm]{Figures/Montaje/14.jpg}}; \\
+ \node[lablum=m]{\includegraphics[width=2cm]{Figures/Montaje/13.jpg}}; & \node[lablum=n]{\includegraphics[width=8cm]{Figures/Montaje/14.jpg}}; \\
  };
 \draw[marr] ([xshift=1mm]img-l.south west) coordinate (aux) 
  -- (img-m.north-|aux);
@@ -379,6 +380,7 @@ marr/.style={line width=1mm,-latex}]
 \end{figure}
 %===============================================================================================================
 
+\pagebreak
 \section{Proceso Global}
 El proceso global se detalla en la figura \ref{fig:montaje}
 
