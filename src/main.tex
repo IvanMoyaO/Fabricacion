@@ -1,0 +1,116 @@
+% Esta plantilla ha sido diseñada por Daniel del Río Velilla, profesor en la Escuela de Aeronáutica y del Espacio, UPM.
+% LA PLANTILLA ES DE USO LIBRE PERO ESTÁ SUJETA A DERECHOS DE PROPIEDAD INTELECTUAL, POR LO QUE SU COMERCIALIZACIÓN ES ILEGAL.
+
+% Plantilla Modificada por Iván Moya
+% Plantilla Trabajos etsiae
+
+\documentclass[11pt,a4paper,titlepage,twoside]{report}
+
+%   ---   DEFINICION DEL TRABAJO   ---   %
+
+\newcommand{\Project}{Fabricación Aeroespacial}
+\newcommand{\ProjectTitle}{Práctica de Soldadura y Chapistería}
+\newcommand{\ProjectSubject}{Grado en Ingeniería Aeroespacial}
+\newcommand{\ProjectAutor}{Álvarez Capitán, Belén \\ & Linares Mompeón, Lucía \\ & Moya Ortiz, Iván \\ & Rosselló Delporte, Aruna \\ & Varó Torrecillas, Jorge}
+\newcommand{\Grupo}{SJ11}
+\newcommand{\ProjectLocation}{Madrid}
+\newcommand{\ProjectDate}{\today}
+% Descomentar si se tiene un repositorio del trabajo
+ \newcommand{\ProjectGitHub}{https://github.com/IvanMoyaO/Fabricacion}
+\newcommand{\pag}[1]{página \pageref{#1}}
+ 
+
+%   ---   INCLUIR ARCHIVOS DE CONFIGURACION   ---   %
+
+\input{./Tex_Files/packages.tex}
+\input{./Tex_Files/header_footer.tex}
+\input{./Tex_Files/functions.tex}
+
+
+
+%   ---   COMIENZO DEL DOCUMENTO   ---   %
+\begin{document}
+\renewcommand{\abstractname}{Introducción}
+
+ \newtcbtheorem{nota}{\bfseries Nota}{enhanced,drop shadow={black!50!white},
+  coltitle=black,
+  top=0.3in,
+  attach boxed title to top left=
+  {xshift=1.5em,yshift=-\tcboxedtitleheight/2},
+  boxed title style={size=small,colback=pink}
+}{nota}
+
+%   ---   INCLUIR PORTADA   ---   %
+
+\input{./Tex_Files/portada.tex}
+\includepdf{Figures/Enunciado/Portada.pdf}
+
+
+%   ---   INDICE Y LISTAS   ---   %
+
+% Indice
+\pagenumbering{gobble}
+\tableofcontents
+\newpage
+
+% Numeracion en romano
+\pagenumbering{roman}
+\raggedbottom
+
+% Figuras    
+\addcontentsline{toc}{section}{\listfigurename}
+\listoffigures
+\cleardoublepage
+
+
+% Numeracion en arabico
+\setcounter{page}{0}
+\pagenumbering{arabic}
+
+\setcounter{chapter}{0} 
+\setcounter{secnumdepth}{3} %subsubsubsecciones, i.e. Cap.Sec.SubSec.SubSubSec 1.2.3.4
+\renewcommand{\chaptername}{Parte}
+
+
+%   ---   ARCHIVOS DEL DOCUMENTO   ---   %
+% Es recomendable escribir el trabajo en documentos separados y luego importarlos al main.
+
+\input{Tex_Files/partes/Intro}
+\input{Tex_Files/partes/Planos}
+\cleardoublepage
+\input{Tex_Files/partes/Uniones}
+\cleardoublepage
+\input{Tex_Files/partes/Montaje}
+\cleardoublepage
+
+
+
+%   ---   BIBLIOGRAFÍA/REFERENCIAS   ---   %
+
+\phantomsection
+\addcontentsline{toc}{section}{Referencias}
+\renewcommand{\refname}{Referencias}
+\bibliographystyle{elsarticle-num}
+\bibliography{references.bib}
+\cleardoublepage
+
+
+
+%   ---   ANEXOS   ---   %
+
+\appendix
+\renewcommand{\appendixname}{Anexo}
+\addcontentsline{toc}{section}{\appendixname}
+\cleardoublepage
+\appendixpage
+\addappheadtotoc
+\renewcommand{\appendixname}{Anexo}
+
+\input{./Tex_Files/A_01.tex}
+\cleardoublepage
+
+
+
+
+
+\end{document}
